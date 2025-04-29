@@ -16,22 +16,22 @@ export default function Home() {
   return (
     <div className="min-h-full">
       {/* 
-        TEMPLATE SECTION: Hero
-        This is a template hero section - replace with your own content
-        Feel free to change layout, styling, and content completely
+        Hero Section with Waitlist CTA
       */}
       <section className="container mx-auto px-4 pt-24 pb-20">
         <div className="max-w-[800px] mx-auto text-center">
-          <h1 className="text-5xl font-bold tracking-tight lg:text-6xl">
-            Template Starter
+          <h1 className="text-5xl font-bold tracking-tight lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-violet-600 dark:from-blue-400 dark:to-violet-400">
+            Exclusive Access Coming Soon
           </h1>
           <p className="mt-6 text-xl text-muted-foreground max-w-[600px] mx-auto">
-            This is a customizable template. Replace all content with your own using the chat interface.
+            Join our waitlist today and get early access to our platform. Refer friends to move up in the queue!
           </p>
           <div className="mt-12 flex gap-4 justify-center">
-            <Button size="lg" className="px-8">Sample Button</Button>
+            <Button size="lg" className="px-8 bg-gradient-to-r from-blue-600 to-violet-600 hover:from-blue-700 hover:to-violet-700" asChild>
+              <a href="/waitlist">Join Waitlist</a>
+            </Button>
             <Button size="lg" variant="outline" className="px-8" onClick={showToast}>
-              Show Toast
+              Learn More
             </Button>
           </div>
         </div>
